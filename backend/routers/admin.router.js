@@ -42,6 +42,7 @@ Router.post("/login", (req, res) => {
       adminId: admin.adminId,
       AdminName: admin.AdminName,
       email: admin.email,
+      password:admin.password
     });
   } else {
     return res.status(401).json({ message: "Invalid email or password." });
